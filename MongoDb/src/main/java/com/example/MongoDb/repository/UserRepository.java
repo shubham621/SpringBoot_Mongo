@@ -6,4 +6,5 @@ import com.example.MongoDb.entity.Users;
 
 public interface UserRepository extends MongoRepository<Users, String> {
 
+	Users findByusernameEquals(String Username);
 }
